@@ -5,18 +5,18 @@
   //执行点击事件
   function formSubmit (e) {
  
-    //声明当天执行的
-    var that = this;
+    // //声明当天执行的
+    // var that = this;
 
-    // var x =document.createElement("P");
-    // x.setAttribute("id","BMI");
-    var x =document.getElementById("output");
-    var t = document.createTextNode("your BMI is ");
-    x.appendChild(t);
-    document.body.appendChild(x);
-    var txt1="<p>Text.</p>";               // 以 HTML 创建新元素
-    var txt2=$("<p></p>").text("Text.");   // 以 jQuery 创建新元素
-    var txt3=document.createElement("p");  // 以 DOM 创建新元素
+    // // var x =document.createElement("P");
+    // // x.setAttribute("id","BMI");
+    // var x =document.getElementById("output");
+    // var t = document.createTextNode("your BMI is ");
+    // x.appendChild(t);
+    // document.body.appendChild(x);
+    var $txt1="<p>Text.</p>";               // 以 HTML 创建新元素
+    var $txt2=$("<p></p>").text("Text.");   // 以 jQuery 创建新元素
+    var $txt3=document.createElement("p");  // 以 DOM 创建新元素
     txt3.innerHTML="Text.";
     $("p").append(txt1,txt2,txt3);         // 追加新元素
  
