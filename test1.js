@@ -1,3 +1,7 @@
+  $().ready(function() {
+   $("#text").html("Text added by jQuery code.");
+});
+
   //执行点击事件
   function formSubmit (e) {
  
