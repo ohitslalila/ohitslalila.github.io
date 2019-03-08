@@ -4,8 +4,9 @@
     //声明当天执行的
     var that = this;
 
-    var x =document.createElement("P");
-    x.setAttribute("id","BMI");
+    // var x =document.createElement("P");
+    // x.setAttribute("id","BMI");
+    var x =document.getElementById("output");
     var t = document.createTextNode("your BMI is ");
     x.appendChild(t);
     document.body.appendChild(x);
