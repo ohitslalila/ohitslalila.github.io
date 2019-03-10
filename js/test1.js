@@ -3,7 +3,7 @@ $("#btn").click(function(){
     $.ajax({
         url:'http://162.105.94.242/bdtest.php',
         type:'post',
-        dataType:'json',
+        dataType:'jsonp',
         data:{post1:$("#name_input").val(), post2:$("#num_input").val()},
         success:function(data){
                 // $("#result").text(JSON.stringify(data));
