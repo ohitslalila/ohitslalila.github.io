@@ -1,7 +1,7 @@
 $("#btn").click(function(){
 
     $.ajax({
-        url:'http://162.105.94.242/bdtest.php',
+        url:'https://162.105.94.242/bdtest.php',
         type:'post',
         dataType:'jsonp',
         data:{post1:$("#name_input").val(), post2:$("#num_input").val()},
