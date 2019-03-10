@@ -2,7 +2,14 @@
 <html lang="en" >
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.min.css">
+   
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="jqm/jquery.mobile-1.4.5.min.js"></script>
+    
   <title>BMI</title>
   
   
@@ -14,24 +21,32 @@
 
 <body>
 
-  <h1>Your BMI</h1>
+  <h1 id = "title">成绩查询 beta</h1>
 
-<div id = "wgt">
+<div id = "name">
+姓名
+<input type = "text" id = "name_input">
 </div>
 
-<div id = "hgt">
+<div id = "num">
+学号
+<input type = "text" id = "num_input">
 </div>
 <div>
 <p>
-<input type = "button" value = "calculate" onclick = "showconfirm()" id = "cal">
+<input type = "button" value = "查询" id = "btn">
 </p>
-<p>
+<!-- <p>
 <input type = "button" value = "can't see where to input" onclick = "dochange()" id = "can">
 </p>
-  
-  
+   -->
+<p id = "result">
+</p>
+<ul id = "grade">
+</ul>  
 
-    <script src="js/index.js"></script>
+<!--     <script src="js/index.js"></script> -->
+    <script src="js/test1.js"></script>
 
 
 

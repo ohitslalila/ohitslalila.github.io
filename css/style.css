@@ -1,17 +1,17 @@
 h1{
   font-family: Segoe UI;
   padding-left:10px;
-  color:#96F7CD;
+  color:#1E90FF;
 }
 div{
-  width:160px;
+  width:200px;
   height:50px;
   margin:20px;
-  color:#C2E4D3;
+  color:#1E90FF;
   padding:6px;
   font-family:Segoe Script,微软雅黑;
 }
-#wgt{
+/*#wgt{
   background-color:#3F7FBF;
   border:2px solid #C7CEE9;
 }
@@ -24,4 +24,4 @@ div{
 }
 #BMI{
   margin:50px;
-}
+}*/
