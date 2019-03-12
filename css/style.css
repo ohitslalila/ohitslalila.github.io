@@ -11,6 +11,9 @@ div{
   padding:6px;
   font-family:Segoe Script,微软雅黑;
 }
+ul{
+  list-style-type: none;
+}
 /*#wgt{
   background-color:#3F7FBF;
   border:2px solid #C7CEE9;

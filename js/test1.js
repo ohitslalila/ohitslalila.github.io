@@ -7,18 +7,18 @@ $("#btn").click(function(){
         data:{post1:$("#name_input").val(), post2:$("#num_input").val()},
         success:function(data){
                 // $("#result").text(JSON.stringify(data));
-                // $("#result").text("!");
-                for (var key in data) {
-					if (key.search("error") != -1){
-                    $("#grade").text("<li>" + key + ": " + data[key] + "</li>");
-                } else { 
-                    $("#grade").text("<li>" + "查询结果: " + "</li>");          
+                // $("#result").text("!");      
+			if ("error" in data){
+                    $("#grade").html("\n <li>" + "error" + ": " + data["error"] + "</li>");
+                } 
+                else {
+                    $("#grade").html("<li>" + "查询结果: " + "</li>");          
 	                for (var key in data) {
-						if (key.search("第") != -1){
+						if (key.search("第") != -1) {
 	                    $("#grade").append("<li>" + key + ": " + data[key] + "</li>");
-	                };
-                };
-                };
+	                }
+                }
+            }
                 // $("#post2").text(data[1]);
         },
         error:function(data){
